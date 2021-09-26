@@ -17,7 +17,7 @@ function setDate() {
   const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
-  const currentDate =  now.getMonth() + ":" + now.getDate() + ":" + now.getFullYear();
+  const currentDate =  now.getMonth() + "/" + now.getDate() + "/" + now.getFullYear();
   document.getElementById("date").innerHTML = currentDate;
 
   const currentTime = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
